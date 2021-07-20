@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
+import PageHeader from './PageHeader';
 
 class Page extends React.PureComponent{
 
@@ -8,9 +9,11 @@ class Page extends React.PureComponent{
 
             <Box
                 align='start'
-                fill='vertical'
-                background={{color:'blue'}}
+                justify='start'
+                flex='grow'
+                fill
             >
+                <PageHeader/>
                 {this.props.children}
             </Box>
 

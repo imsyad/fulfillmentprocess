@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import Lh0 from './pages/lh0'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

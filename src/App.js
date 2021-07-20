@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Router } from '@reach/router';
+import { Grommet, Box } from 'grommet';
+import Loadable from 'react-loadable';
+
+function RouterComponent({ children }) {
+  return <>{children}</>;
+}
+
+const loading = <Box fill='vertical' align='center' margin='40px'><h1>loading</h1></Box> 
+
+const Home = Loadable({loader:()=>import('./pages/main'),loading(){return loading}});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grommet>
+      <Router primary={false} component={RouterComponent}>
+        <Home path='/' />
+      </Router>
+    </Grommet>
   );
 }
 
