@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Box, Button, Heading, Sidebar } from 'grommet';
 import Page from '../components/Page';
 import LH0 from './lh0'
+import LH1 from './lh1'
 
 const Main = () => {
 
@@ -17,7 +18,7 @@ const Main = () => {
     function contentSwitch(param) {
         switch (param) {
             case titleName[1]:
-                return titleName[1];
+                return <LH1/>;
             case titleName[2]:
                 return titleName[2];
             case titleName[3]:

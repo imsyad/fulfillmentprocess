@@ -7,9 +7,9 @@ const lh0 = () => {
     return (
         <>
             <Heading>Topik</Heading>
-            <div><p>Order fulfillment.</p></div>
+            <div class='content'><p>Order fulfillment.</p></div>
             <Heading>Deskripsi</Heading>
-            <div style={{'line-height':'1.5'}}>
+            <div class='content' style={{'line-height':'1.5'}}>
                 Laman web ini adalah halaman yang dibuat oleh Gemintang Sangkaji Furqon (dengan NIM 191524009), Irsyad Muhammad (dengan NIM 191524014), dan Muhammad Rafi Kamil (dengan NIM 191524029). Laman web ini merupakan bentuk laporan proyek untuk pemenuhan tugas Mata Kuliah Perancangan Antarmuka Pengguna teori. Pada laman web ini, konten akan dibagi menjadi 4 bagian, yaitu:
                 <ul class="first">
                     <li>Bagian buku laporan proyek. Halaman ini akan menampilkan informasi topik proyek, deskripsi singkat proyek, identitas dan foto anggota kelompok, serta tugas dan pembagian tugas pada proyek ini.</li>

@@ -1,0 +1,25 @@
+.first{
+    list-style-type: decimal;
+}
+
+.first li{
+    font-size: 1.125em;
+    margin:0.75em;
+}
+
+.second{
+    list-style-type:lower-latin;
+}
+
+.second li{
+    font-size: 1em;
+}
+.third{
+    list-style-type:lower-roman;
+}
+
+div.content{
+    text-align: justify;
+    text-justify: inter-word;
+    line-height:'1.5'
+}
