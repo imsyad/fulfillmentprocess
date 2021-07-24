@@ -1,6 +1,8 @@
 import React from 'react';
-import { Heading, Table, TableHeader, TableCell, TableRow, TableBody } from 'grommet';
+import { Heading, Table, TableHeader, TableCell, TableRow, TableBody, Layer } from 'grommet';
 import '../style/text.css';
+import '../style/image.css';
+import HTA from '../assets/Order Fulfillment-HTA.jpg';
 
 const lh1 = () => {
     return (
@@ -182,7 +184,9 @@ const lh1 = () => {
                     </ul>
                     <li>Struktur Analisis Tugas</li>
                     <p>Proses analisis task yang sudah dibuat sebelumnya, menggunakan analisis fungsional yang direpresentasikan dengan Hierarchical Task Analysis. Berikut merupakan HTA dari analisis tugas pengguna.</p>
-                    <img></img>
+                    <div class='image-container'>
+                        <img src={HTA} alt='HTA'/>
+                    </div>
                 </ul>
             </div>
             <Heading>Tentukan Goal</Heading>
