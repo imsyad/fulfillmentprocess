@@ -8,10 +8,12 @@ class Page extends React.PureComponent{
         return(
 
             <Box
+                margin="0"
                 align='start'
                 justify='start'
                 flex='grow'
                 fill
+                gap="40px"
             >
                 <PageHeader/>
                 {this.props.children}

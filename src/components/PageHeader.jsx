@@ -1,45 +1,26 @@
 import React from 'react';
-import { Box, Heading, Menu, Text } from 'grommet';
-import { navigate } from '@reach/router';
+import { Box, Heading } from 'grommet';
 
 class PageHeader extends React.Component{
 
     render(){
         return(
             <Box
-                pad={{horizontal:'40px'}}
                 align='start'
                 justify='between'
                 fill='horizontal'
                 direction='row'
-                flex='shrink'
                 overflow='hidden'
+                background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
+                height='70px'
             >
                 <Box
-                    fill='vertical'
+                    fill  
+                    align='center'
+                    justify='center'
                 > 
-                    <Heading level='3'>Kelompok 4</Heading>
+                    <Heading margin ='0' alignSelf='center' level='3' color="white">Kelompok 4</Heading>
                 </Box>
-                {/* <Box
-                    fill='vertical'
-                    direction='row'
-                >
-                    <Box>
-                        <Menu
-                            label='Daftar LH'
-                            items={[
-                                {label:'LH 1 Analisis Permasalahan dan Kebutuhan', onclick:()=>{navigate(-1)}},
-                                {label:'LH 2 Perancangan Interface', onClick:()=>{navigate(-1)}},
-                                {label:'LH 3 Prototyping', onClick:()=>{navigate(-1)}}
-                            ]}
-                        />
-                    </Box>
-                    <Box
-
-                    >
-                        <Text>Tentang Kami</Text>
-                    </Box>
-                </Box> */}
             </Box>
 
         );

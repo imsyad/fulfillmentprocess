@@ -7,3 +7,12 @@ img{
     width: 100%;
     height: auto;
 }
+
+.image-container-custom{
+    width: 100%;
+    height: auto;
+}
+
+.image-container-custom:hover{
+    cursor: zoom-in;
+}

@@ -1,10 +1,14 @@
-import React from 'react';
-import { Heading, Table, TableHeader, TableCell, TableRow, TableBody, Layer } from 'grommet';
+import React, {useState} from 'react';
+import { Box, Button, Heading, Table, TableHeader, TableCell, TableRow, TableBody, Layer } from 'grommet';
+import { Close } from 'grommet-icons';
 import '../style/text.css';
 import '../style/image.css';
 import HTA from '../assets/Order Fulfillment-HTA.jpg';
 
-const lh1 = () => {
+
+
+const Lh1 = () => {
+    const [zoom, setZoom] = useState(false);
     return (
         <>
             <Heading>Karakteristik Pengguna</Heading>
@@ -184,9 +188,19 @@ const lh1 = () => {
                     </ul>
                     <li>Struktur Analisis Tugas</li>
                     <p>Proses analisis task yang sudah dibuat sebelumnya, menggunakan analisis fungsional yang direpresentasikan dengan Hierarchical Task Analysis. Berikut merupakan HTA dari analisis tugas pengguna.</p>
-                    <div class='image-container'>
+                    <div class='image-container-custom' onClick={()=>setZoom(true)} >
                         <img src={HTA} alt='HTA'/>
                     </div>
+                    {zoom?
+                    <Layer onEsc={()=>setZoom(false)} full>
+                        <Box pad="40px" gap="large" align='center'>
+                            <img src={HTA} alt='HTA'/>
+                            <Box width="200px">
+                                <Button primary onClick={()=>setZoom(false)} icon={<Close size="small" color="white"/>} label="Tutup"/>
+                            </Box>
+                        </Box>
+                    </Layer>
+                    :null}
                 </ul>
             </div>
             <Heading>Tentukan Goal</Heading>
@@ -316,4 +330,4 @@ const lh1 = () => {
     );
 }
 
-export default lh1;
+export default Lh1;

@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
-import { Box, Button, Heading, Sidebar } from 'grommet';
+import { Box, Button, Sidebar } from 'grommet';
+import { Helmet } from 'react-helmet';
 import Page from '../components/Page';
 import LH0 from './lh0'
 import LH1 from './lh1'
+import LH2 from './lh2'
+import LH3 from './lh3'
 
 const Main = () => {
 
@@ -20,9 +23,9 @@ const Main = () => {
             case titleName[1]:
                 return <LH1/>;
             case titleName[2]:
-                return titleName[2];
+                return <LH2/>;
             case titleName[3]:
-                return titleName[3];
+                return <LH3/>;
             default:
                 return <LH0/>;
         }
@@ -30,6 +33,9 @@ const Main = () => {
 
     return(
         <Page>
+            <Helmet>
+                <title>Proses Order Fulfillment | Kelompok 4</title>
+                </Helmet>
             <Box 
                 pad={{horizontal:'40px'}}
                 fill='horizontal'
@@ -38,26 +44,26 @@ const Main = () => {
             >
                 <Box align='start'>
                     <Sidebar
+                        pad={{horizontal:'12px'}}
                         responsive={false}
                     >
                         <Box align='start' gap='medium' fill='horizontal'>
-                            <Box pflex='grow' pad='8px' fill='horizontal' background={{color:title===titleName[0]?'whitesmoke':null}}>
-                                <Button plain label={titleName[0]} onClick={()=>setTitle(titleName[0])}/>
+                            <Box flex='grow' pad='8px' fill='horizontal' background={title===titleName[0]?"linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)":null}>
+                                <Button color={title===titleName[0]?"white":'black'} plain label={titleName[0]} onClick={()=>setTitle(titleName[0])}/>
                             </Box>
-                            <Box flex='grow' pad='8px' fill='horizontal' background={{color:title===titleName[1]?'whitesmoke':null}}>
-                                <Button plain label={titleName[1]} onClick={()=>setTitle(titleName[1])}/>
+                            <Box flex='grow' pad='8px' fill='horizontal' background={title===titleName[1]?"linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)":null}>
+                                <Button color={title===titleName[1]?"white":'black'} plain label={titleName[1]} onClick={()=>setTitle(titleName[1])}/>
                             </Box>
-                            <Box flex='grow' pad='8px' fill='horizontal' background={{color:title===titleName[2]?'whitesmoke':null}}>
-                                <Button plain label={titleName[2]} onClick={()=>setTitle(titleName[2])}/>                            
+                            <Box flex='grow' pad='8px' fill='horizontal' background={title===titleName[2]?"linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)":null}>
+                                <Button color={title===titleName[2]?"white":'black'} plain label={titleName[2]} onClick={()=>setTitle(titleName[2])}/>                            
                             </Box>
-                            <Box pflex='grow' pad='8px' fill='horizontal' background={{color:title===titleName[3]?'whitesmoke':null}}>
-                                <Button plain label={titleName[3]} onClick={()=>setTitle(titleName[3])}/>
+                            <Box pflex='grow' pad='8px' fill='horizontal' background={title===titleName[3]?"linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)":null}>
+                                <Button color={title===titleName[3]?"white":'black'} plain label={titleName[3]} onClick={()=>setTitle(titleName[3])}/>
                             </Box>
                         </Box>
                     </Sidebar>
                 </Box>
                 <Box width='75%'>
-                    <Heading level='2' margin='0'>{title}</Heading>
                     <Box border fill='horizontal' pad='16px' wrap={true}>
                         {contentSwitch(title)}
                     </Box>
