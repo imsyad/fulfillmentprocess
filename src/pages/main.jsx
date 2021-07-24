@@ -34,7 +34,7 @@ const Main = () => {
     return(
         <Page>
             <Helmet>
-                <title>Proses Order Fulfillment | Kelompok 4</title>
+                <title>Proses Order Fulfillment | Kelompok 3</title>
                 </Helmet>
             <Box 
                 pad={{horizontal:'40px'}}

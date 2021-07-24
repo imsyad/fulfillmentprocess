@@ -2,9 +2,6 @@ import React from 'react';
 import { Box, Heading,Table, TableHeader, TableCell, TableRow, TableBody } from 'grommet';
 import '../style/text.css';
 import '../style/image.css';
-import Irsyad from '../assets/191524014.jpg'
-import Gemintang from '../assets/191524009.jpg'
-import Rafi from '../assets/191524029.jpg'
 
 const lh0 = () => {
 
@@ -57,21 +54,21 @@ const lh0 = () => {
                     <Box fill="horizontal" direction='row' justify="between">
                         <Box direction='column' align='center'>
                             <div style={{ "align": 'center', "width": "200px", "height": "266.67px" }}>
-                                <img src={Gemintang} alt="Irsyad" />
+                                <img src="https://akademik.polban.ac.id/fotomhsrekap/191524009.jpg" alt="Gemintang" />
                             </div>
                             <p>Gemintang Sangkaji Furqon</p>
                             <p>191524009</p>
                         </Box>
                         <Box direction='column' align='center'>
                             <div style={{ "width": "200px" }}>
-                                <img src={Irsyad} alt="Irsyad" />
+                                <img src="https://akademik.polban.ac.id/fotomhsrekap/191524014.jpg" alt="Irsyad" />
                             </div>
                             <p>Irsyad Muhammad</p>
                             <p>191524014</p>
                         </Box>
                         <Box direction='column' align='center'>
                             <div style={{ "width": "200px" }}>
-                                <img src={Rafi} alt="Irsyad" />
+                                <img src="https://akademik.polban.ac.id/fotomhsrekap/191524029.jpg" alt="Rafi" />
                             </div>
                             <p>Muhammad Rafi Kamil</p>
                             <p>191524029</p>

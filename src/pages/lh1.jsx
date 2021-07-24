@@ -1,14 +1,12 @@
-import React, {useState} from 'react';
-import { Box, Button, Heading, Table, TableHeader, TableCell, TableRow, TableBody, Layer } from 'grommet';
-import { Close } from 'grommet-icons';
+import React from 'react';
+import { Heading, Table, TableHeader, TableCell, TableRow, TableBody} from 'grommet';
 import '../style/text.css';
 import '../style/image.css';
-import HTA from '../assets/Order Fulfillment-HTA.jpg';
-
 
 
 const Lh1 = () => {
-    const [zoom, setZoom] = useState(false);
+
+    const HTA = '<iframe frameborder="0" style="width:100%;height:463px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1ZIt9qlT43QIDh-MWUwFqXrdp16pB2JcA"></iframe>'
     return (
         <>
             <Heading>Karakteristik Pengguna</Heading>
@@ -188,19 +186,9 @@ const Lh1 = () => {
                     </ul>
                     <li>Struktur Analisis Tugas</li>
                     <p>Proses analisis task yang sudah dibuat sebelumnya, menggunakan analisis fungsional yang direpresentasikan dengan Hierarchical Task Analysis. Berikut merupakan HTA dari analisis tugas pengguna.</p>
-                    <div class='image-container-custom' onClick={()=>setZoom(true)} >
-                        <img src={HTA} alt='HTA'/>
+                    <div class='image-container-custom' >
+                    <div dangerouslySetInnerHTML ={{__html:HTA}}></div>
                     </div>
-                    {zoom?
-                    <Layer onEsc={()=>setZoom(false)} full>
-                        <Box pad="40px" gap="large" align='center'>
-                            <img src={HTA} alt='HTA'/>
-                            <Box width="200px">
-                                <Button primary onClick={()=>setZoom(false)} icon={<Close size="small" color="white"/>} label="Tutup"/>
-                            </Box>
-                        </Box>
-                    </Layer>
-                    :null}
                 </ul>
             </div>
             <Heading>Tentukan Goal</Heading>

@@ -19,7 +19,7 @@ class PageHeader extends React.Component{
                     align='center'
                     justify='center'
                 > 
-                    <Heading margin ='0' alignSelf='center' level='3' color="white">Kelompok 4</Heading>
+                    <Heading margin ='0' alignSelf='center' level='3' color="white">Kelompok 3</Heading>
                 </Box>
             </Box>
 

@@ -2,11 +2,13 @@ import React from 'react';
 import { Heading } from 'grommet';
 import '../style/text.css';
 import '../style/image.css';
-import UCD from '../assets/Order Fulfillment-Use Case Diagram.jpg';
-import ERD from '../assets/Order Fulfillment-ERD_.jpg';
-import ACD from '../assets/Order Fulfillment-Model Proses.jpg';
 
 const lh2 =()=>{
+
+    const ERD ='<iframe frameborder="0" style="width:100%;height:644px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1o92MgztjW6UcP4eaXbvlOFPnoSi1uLja"></iframe>'
+    const UCD ='<iframe frameborder="0" style="width:100%;height:1403px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1k6iLMMCZD_ZYFINb3GtvuH57P20nxTGd"></iframe>'
+    const MP ='<iframe frameborder="0" style="width:100%;height:1934px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1ak8ML-0J_VkYiPgCOG-h8PQRh9r2hObV"></iframe>'
+
     return(
         <>
             <Heading>Kebutuhan Situs</Heading>
@@ -42,7 +44,7 @@ const lh2 =()=>{
                     </ul>
                     <li>Ringkasan Persyaratan</li>
                     <div class='image-container'>
-                        <img src={UCD} alt="use case diagram"/>
+                        <div dangerouslySetInnerHTML ={{__html:UCD}}></div>
                     </div>
                 </ul>
             </div>
@@ -50,14 +52,14 @@ const lh2 =()=>{
                 <div class='content'>
                     <p>Kebutuhan data pada sistem ORder Fulfillment digambarkan dengan ERD (Entity Relationship Diagram) sebagai berikut:</p>
                     <div class='image-container'>
-                        <img src={ERD} alt="Entity Relationhsip Diagram"/>
+                        <div dangerouslySetInnerHTML ={{__html:ERD}}></div>
                     </div>
                 </div>
             <Heading>Kebutuhan Proses</Heading>
                 <div class='content'>
                     <p>Kebutuhan proses pada sistem Order Fulfillment kami gambarkan dalam bentuk activity diagram sebagai berikut.</p>
                     <div class='image-container'>
-                        <img src={ACD} alt="Model Proses"/>
+                    <div dangerouslySetInnerHTML ={{__html:MP}}></div>
                     </div>
                 </div>
             <Heading>Rancangan Tampilan</Heading>
