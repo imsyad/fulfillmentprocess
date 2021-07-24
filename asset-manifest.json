@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/fulfillmentprocess/static/js/main.5594e70c.chunk.js",
+    "main.js.map": "/fulfillmentprocess/static/js/main.5594e70c.chunk.js.map",
+    "runtime-main.js": "/fulfillmentprocess/static/js/runtime-main.d28aeb83.js",
+    "runtime-main.js.map": "/fulfillmentprocess/static/js/runtime-main.d28aeb83.js.map",
+    "static/js/2.e13b1f9e.chunk.js": "/fulfillmentprocess/static/js/2.e13b1f9e.chunk.js",
+    "static/js/2.e13b1f9e.chunk.js.map": "/fulfillmentprocess/static/js/2.e13b1f9e.chunk.js.map",
+    "static/js/3.d5180982.chunk.js": "/fulfillmentprocess/static/js/3.d5180982.chunk.js",
+    "static/js/3.d5180982.chunk.js.map": "/fulfillmentprocess/static/js/3.d5180982.chunk.js.map",
+    "static/css/4.72a9474a.chunk.css": "/fulfillmentprocess/static/css/4.72a9474a.chunk.css",
+    "static/js/4.5dfee655.chunk.js": "/fulfillmentprocess/static/js/4.5dfee655.chunk.js",
+    "static/js/4.5dfee655.chunk.js.map": "/fulfillmentprocess/static/js/4.5dfee655.chunk.js.map",
+    "static/js/5.a6b8a3b1.chunk.js": "/fulfillmentprocess/static/js/5.a6b8a3b1.chunk.js",
+    "static/js/5.a6b8a3b1.chunk.js.map": "/fulfillmentprocess/static/js/5.a6b8a3b1.chunk.js.map",
+    "index.html": "/fulfillmentprocess/index.html",
+    "static/css/4.72a9474a.chunk.css.map": "/fulfillmentprocess/static/css/4.72a9474a.chunk.css.map",
+    "static/js/2.e13b1f9e.chunk.js.LICENSE.txt": "/fulfillmentprocess/static/js/2.e13b1f9e.chunk.js.LICENSE.txt",
+    "static/media/191524009.a5744692.jpg": "/fulfillmentprocess/static/media/191524009.a5744692.jpg",
+    "static/media/191524014.200edb1c.jpg": "/fulfillmentprocess/static/media/191524014.200edb1c.jpg",
+    "static/media/191524029.142fb430.jpg": "/fulfillmentprocess/static/media/191524029.142fb430.jpg",
+    "static/media/Order Fulfillment-ERD_.b110028b.jpg": "/fulfillmentprocess/static/media/Order Fulfillment-ERD_.b110028b.jpg",
+    "static/media/Order Fulfillment-HTA.be4b3b9b.jpg": "/fulfillmentprocess/static/media/Order Fulfillment-HTA.be4b3b9b.jpg",
+    "static/media/Order Fulfillment-Model Proses.f5a2a1b2.jpg": "/fulfillmentprocess/static/media/Order Fulfillment-Model Proses.f5a2a1b2.jpg",
+    "static/media/Order Fulfillment-Use Case Diagram.b6dd18b2.jpg": "/fulfillmentprocess/static/media/Order Fulfillment-Use Case Diagram.b6dd18b2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d28aeb83.js",
+    "static/js/2.e13b1f9e.chunk.js",
+    "static/js/main.5594e70c.chunk.js"
+  ]
+}
