@@ -1,10 +1,6 @@
-import { Router } from '@reach/router';
 import { Grommet, Box, Spinner } from 'grommet';
 import Loadable from 'react-loadable';
 
-function RouterComponent({ children }) {
-  return <>{children}</>;
-}
 
 const loading = <Box fill='vertical' align='center' margin='40px'><Spinner/></Box> 
 
@@ -34,9 +30,7 @@ const theme = {
 function App() {
   return (
     <Grommet fulll theme={theme}>
-      <Router primary={false} component={RouterComponent}>
-        <Home path='/' />
-      </Router>
+      <Home/>
     </Grommet>
   );
 }
