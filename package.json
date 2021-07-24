@@ -1,5 +1,5 @@
 {
-  "homepage": "http://UID-Teori.github.io/TugasBesar",
+  "homepage": "http://imsyad.github.io/fulfillmentprocess",
   "name": "tugasbesar",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "-d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
