@@ -64,7 +64,7 @@ const lh2 =()=>{
             <div class='content'>
                 <ul class="first">
                     <li>Deskripsi Desain</li>
-                    <p>Aplikasi yang dirancang memiliki dua perspektif pengguna, yaitu perspektif pelanggan dan perspektif perusahaan. Untuk perspektif perusahaan dibagi menjadi dua pengguna yaitu Staf Departemen Pasokan dan Staf Departemen Pembawa. Berikut beberapa tampilan dari kebutuhan yang krusial pagi setiap pengguna dari aplikasi.</p>
+                    <p>Aplikasi yang dirancang memiliki dua perspektif pengguna, yaitu perspektif pelanggan dan perspektif perusahaan. Untuk perspektif perusahaan dibagi menjadi dua pengguna yaitu Staf Departemen Pasokan dan Staf Departemen Pembawa. Berikut beberapa tampilan dari kebutuhan yang krusial pagi setiap pengguna dari aplikasi. <i>Catatan: Tampilan untuk departemen pembawa(kurir) akan memiliki tampilan untuk mobile.</i></p>
                     <li>Kesimpulan Akhir</li>
                     <p>Setelah melakukan diskusi antar anggota dan melakukan perancangan aplikasi, didapatkan kesimpulan yaitu aplikasi yang akan dibangun memiliki dua perspektif yaitu sebagai pelanggan dan sebagai perusahaan. Aplikasi yang dibangun berhasil mengotomasi beberapa kegiatan pada proses Order Fulfillment seperti proses pembuatan Pemesanan Pembelian (PP) atau pembuatan Janji Pengambilan dan Pengiriman. Dengan adanya proses yang terotomasi maka adapun pekerjaan yang hilang dari perusahaan di beberapa proses, contohnya karena pembuatan Pemesanan Pembelian (PP) dilakukan secara otomatis oleh sistem, maka pekerjaan Departemen Manajemen Pemesanan di bagian ini akan tergantikan.</p>
                 </ul>
